@@ -4,7 +4,7 @@ from datetime import datetime
 
 from peewee import Model, SqliteDatabase, IntegerField, CharField,  DateField, ForeignKeyField
 
-db = SqliteDatabase(os.path.dirname(sys.argv[0])+'database.db')
+db = SqliteDatabase(os.path.dirname(sys.argv[0])+'/database.db')
 
 class Agent(Model):
     account_id = IntegerField(unique=True)

@@ -9,6 +9,7 @@ verify_ssl = true
 python-telegram-bot = "*"
 pysocks = "*"
 deeppavlov = "*"
+peewee = "*"
 
 [requires]
 python_version = "3.8"
