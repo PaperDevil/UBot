@@ -1,5 +1,6 @@
 from telegram.ext import Updater, CommandHandler
 
+
 class BotApplication(Updater):
     def __init__(self, token, request_args, handlers):
         super().__init__(token, request_kwargs=request_args, use_context=True)
@@ -12,4 +13,3 @@ class BotApplication(Updater):
 
     def start(self):
         self.start_polling()
-
